@@ -1,0 +1,32 @@
+<div ng-controller="PostCtrl">
+	<h3>Add Post</h3>
+	<form ng-submit="savePost()">
+		<div class="form-group">
+	    <label for="post.title">Title</label><br>
+	    <div class="col-md-4">
+	    	<input type="text" class="form-control" id="title" ng-model="post.title" placeholder="add your own title">
+	    </div>
+	  </div><br><br>
+	    <div class="form-group">
+	      <input type="submit" class="btn btn-primary " value="Submit" />
+	    </div>
+	</form>
+	<a class="btn btn-primary" href="#/posts">Posts</a>
+</div>
+
+
+
+<style type="text/css">
+	label{
+		margin-left: 12px;
+	}
+	input[type=submit]{
+		margin-left: 12px;
+	}
+	h3{
+		margin-left: 12px;
+	}
+	a{
+		margin-left: 12px;
+	}
+</style>
